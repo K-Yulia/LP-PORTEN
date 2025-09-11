@@ -1,0 +1,617 @@
+:root {
+  --primary-family: "PT Sans", sans-serif;
+  --second-family: "Playfair Display", serif;
+  --primary-color: rgb(255, 255, 255);
+  --second-color: rgb(150, 150, 150);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--primary-family);
+  background-color: rgb(0, 0, 0);
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.title {
+  position: relative;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+.title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-color);
+}
+.btn {
+  padding: 12px 28px;
+  border: 1px solid var(--primary-color);
+  font-family: var(--primary-family);
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+.text {
+  font-family: var(--primary-family);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+.top-line {
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.work-schedule {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-right: auto;
+}
+.work-schedule__phone-wrapper {
+  display: flex;
+}
+.work-schedule__icon-phone {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  fill: var(--second-color);
+}
+.work-schedule__phone {
+  font-size: 12px;
+  color: #969696;
+}
+.work-schedule__phone-wrapper:hover .work-schedule__phone,
+.work-schedule__phone-wrapper:focus .work-schedule__phone {
+  color: var(--primary-color);
+}
+.work-schedule__phone-wrapper:hover .work-schedule__icon-phone,
+.work-schedule__phone-wrapper:focus .work-schedule__icon-phone {
+  fill: var(--primary-color);
+}
+.work-schedule__days {
+  font-size: 12px;
+  color: #969696;
+}
+.work-schedule__time {
+  font-size: 12px;
+  color: #969696;
+}
+.login {
+  display: flex;
+}
+.login__icon-log-in {
+  width: 15px;
+  height: 15px;
+  fill: var(--second-color);
+  margin-right: 20px;
+}
+.login__exit {
+  font-weight: 400;
+  font-size: 12px;
+  color: #969696;
+}
+.login:hover .login__icon-log-in,
+.login:focus .login__icon-log-in {
+  fill: var(--primary-color);
+}
+.login:hover .login__exit,
+.login:focus .login__exit {
+  color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .work-schedule {
+    flex-direction: row;
+  }
+  .work-schedule__icon-phone {
+    margin-right: 15px;
+  }
+  .work-schedule__phone {
+    margin-right: 24px;
+  }
+  .work-schedule__phone {
+    position: relative;
+  }
+  .work-schedule__phone::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #969696;
+    right: -10px;
+  }
+  .work-schedule__days {
+    margin-right: 28px;
+  }
+  .work-schedule__days {
+    position: relative;
+  }
+  .work-schedule__days::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #969696;
+    right: -14px;
+  }
+}
+
+.main-header {
+  background: rgb(15, 15, 15);
+}
+.main-header__container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: "Post No Bills Jaffna", sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-right: auto;
+}
+.page-navigation {
+  display: none;
+}
+.page-navigation__list {
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-family);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.page-navigation__preferences {
+  padding: 33px 21px 31px 21px;
+  color: var(--second-color);
+}
+.page-navigation__preferences:hover,
+.page-navigation__preferences:focus {
+  background-color: rgb(31, 31, 31);
+  color: var(--primary-color);
+}
+.page-navigation__personal-office {
+  padding: 33px 14px 31px 14px;
+  color: var(--second-color);
+}
+.page-navigation__personal-office:hover,
+.page-navigation__personal-office:focus {
+  background-color: rgb(31, 31, 31);
+  color: var(--primary-color);
+}
+.page-navigation__settings {
+  padding: 33px 13px 31px 15px;
+  color: var(--second-color);
+}
+.page-navigation__settings:hover,
+.page-navigation__settings:focus {
+  background-color: rgb(31, 31, 31);
+  color: var(--primary-color);
+}
+.page-navigation__icon-cart {
+  width: 22px;
+  height: 22px;
+  fill: var(--primary-color);
+  margin-left: 19px;
+  margin-right: 41px;
+  margin-top: 8px;
+}
+.page-navigation__icon-search {
+  width: 22px;
+  height: 22px;
+  fill: var(--primary-color);
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .open-mobile-menu-btn {
+    z-index: 3;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 36px;
+    margin-top: 22px;
+    margin-bottom: 16px;
+  }
+  .open-mobile-menu-btn {
+    display: none;
+  }
+  .page-navigation {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 40px;
+  height: 100%;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  background-color: transparent;
+  border: 0;
+  padding: 10px 0px;
+  line-height: 0;
+}
+
+.mobile-menu__close-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--primary-color);
+}
+
+.mobile-menu-nav {
+  display: flex;
+  padding-top: 100px;
+  margin: 0;
+  list-style: none;
+  margin-bottom: auto;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.mobile-menu-nav__link {
+  font-size: 20px;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.mobile-menu-nav__icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--primary-color);
+}
+
+.main-screen {
+  background-color: rgba(15, 15, 15, 0.5);
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.5),
+      rgba(15, 15, 15, 0.5)
+    ),
+    url("../images/img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 810px;
+  padding-top: 160px;
+}
+.logo-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border: 4px solid var(--primary-color);
+  width: 280px;
+  height: 280px;
+}
+.logo-box__title {
+  margin-top: 95px;
+  margin-left: 55px;
+  margin-right: 50px;
+  position: relative;
+  font-family: "Post No Bills Jaffna", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+}
+.logo-box__title::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 3px;
+  background: var(--primary-color);
+}
+.logo-box__text {
+  margin-top: 7px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.our-stores {
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .logo-box {
+    margin-bottom: 80px;
+    width: 320px;
+    height: 320px;
+  }
+  .logo-box__title {
+    margin-top: 102px;
+    margin-left: 63px;
+    margin-right: 61px;
+    font-size: 64px;
+  }
+  .logo-box__text {
+    font-size: 22px;
+  }
+  .our-stores {
+    font-size: 16px;
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.new-season-and-collection {
+  display: flex;
+  flex-direction: column;
+}
+.new-season {
+  display: flex;
+  flex-direction: column;
+}
+.new-season__title {
+  padding-top: 50px;
+  text-align: center;
+}
+.new-season__title::after {
+  bottom: -20px;
+}
+.new-season__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new-season__img-box {
+  background-color: rgb(25, 27, 28);
+  padding: 10px;
+}
+.new-season__img {
+  width: 250px;
+}
+.new-season__name {
+  font-family: var(--second-family);
+  font-size: 18px;
+  margin-top: 25px;
+}
+.new-season__price {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(208, 208, 208);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.new-collection {
+  position: relative;
+}
+.new-collection__img {
+  height: 100%;
+  width: 100%;
+}
+.new-collection__wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.new-collection__wrapper__title::after {
+  bottom: -30px;
+}
+.new-collection__wrapper__btn {
+  margin-top: 56px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 450px) {
+  .new-season__img {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .new-season__list {
+    flex-direction: row;
+    column-gap: 30px;
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .new-season__img {
+    width: 215px;
+  }
+  .new-season__price {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .new-season-and-collection {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .new-season__title {
+    padding-top: 95px;
+  }
+
+  .new-season__price {
+    margin-bottom: 93px;
+  }
+  .new-collection__wrapper__btn {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .new-season__title::after {
+    bottom: -50px;
+  }
+  .new-season__list {
+    column-gap: 50px;
+    padding-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .new-season__img-box {
+    padding: 27px 22px 34px 23px;
+  }
+}
+
+.collection-2018 {
+  display: flex;
+  flex-direction: column;
+}
+.collection-2018__img {
+  height: 100%;
+  width: 100%;
+}
+.collection-2018__wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.collection-2018__title {
+  margin-top: 50px;
+}
+.collection-2018__title::after {
+  bottom: -15px;
+}
+.collection-2018__text {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 628px;
+}
+.collection-2018__btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .collection-2018 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-2018__title {
+    margin-top: 105px;
+  }
+  .collection-2018__title::after {
+    bottom: -40px;
+  }
+  .collection-2018__text {
+    margin-top: 80px;
+    max-width: 628px;
+  }
+  .collection-2018__btn {
+    margin-top: 64px;
+    margin-bottom: 98px;
+  }
+}

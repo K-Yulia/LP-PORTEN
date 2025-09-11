@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP-PORTEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.cdnfonts.com/css/post-no-bills-jaffna"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="top-line container">
+        <div class="work-schedule">
+          <div class="work-schedule__phone-wrapper">
+            <svg class="work-schedule__icon-phone">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+            <a class="work-schedule__phone link" href="tel:+88121234567"
+              >8 (812) 123-45-67</a
+            >
+          </div>
+          <p class="work-schedule__days">Працюємо 7 днів на тиждень</p>
+          <p class="work-schedule__time">9:00 — 18:00</p>
+        </div>
+        <div class="login">
+          <svg class="login__icon-log-in">
+            <use href="./images/sprite.svg#icon-log-in"></use>
+          </svg>
+          <a href="#" class="login__exit link">Вхід / Реєстрація</a>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="main-header__container container">
+          <div class="logo">PORTEN</div>
+          <nav class="page-navigation">
+            <ul class="page-navigation__list list">
+              <li class="page-navigation__item">
+                <a href="#" class="page-navigation__preferences link"
+                  >сподобалось</a
+                >
+              </li>
+              <li class="page-navigation__item">
+                <a href="#" class="page-navigation__personal-office link"
+                  >Особистий кабінет</a
+                >
+              </li>
+              <li class="page-navigation__item">
+                <a href="#" class="page-navigation__settings link"
+                  >налаштування</a
+                >
+              </li>
+              <li class="page-navigation__item">
+                <a href="#" class="page-navigation__link link"
+                  ><svg class="page-navigation__icon-cart">
+                    <use href="./images/sprite.svg#icon-cart"></use></svg
+                ></a>
+              </li>
+              <li class="page-navigation__item">
+                <a href="#" class="page-navigation__link link">
+                  <svg class="page-navigation__icon-search">
+                    <use href="./images/sprite.svg#icon-search"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="open-mobile-menu-btn" data-menu-open>
+            <svg class="open-mobile-menu-btn__icon">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu js-menu" data-menu>
+            <div class="container mobile-menu__container">
+              <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon">
+                  <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu-nav js-nav list">
+                <li class="mobile-menu-nav__item">
+                  <a href="#" class="mobile-menu-nav__link link">сподобалось</a>
+                </li>
+                <li class="mobile-menu-nav__item">
+                  <a href="#" class="mobile-menu-nav__link link"
+                    >Особистий кабінет</a
+                  >
+                </li>
+                <li class="mobile-menu-nav__item">
+                  <a href="#" class="mobile-menu-nav__link link"
+                    >налаштування</a
+                  >
+                </li>
+                <li class="mobile-menu-nav__item">
+                  <a href="#" class="mobile-menu-nav__link link"
+                    ><svg class="mobile-menu-nav__icon">
+                      <use href="./images/sprite.svg#icon-cart"></use></svg
+                  ></a>
+                </li>
+                <li class="mobile-menu-nav__item">
+                  <a href="#" class="mobile-menu-nav__link link"
+                    ><svg class="mobile-menu-nav__icon">
+                      <use href="./images/sprite.svg#icon-search"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-screen">
+        <div class="logo-box">
+          <h1 class="logo-box__title">PORTEN</h1>
+          <p class="logo-box__text">івано-франківськ</p>
+        </div>
+        <p class="our-stores">
+          В магазинах Торговельній мережі Porten ви можете купити годинник у
+          Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську,
+          Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві,
+          Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні,
+          Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших
+          містах України
+        </p>
+      </section>
+      <section class="new-season-and-collection">
+        <div class="new-season">
+          <h2 class="new-season__title title">СЕЗОН 2021/22</h2>
+          <ul class="new-season__list">
+            <li class="new-season__item">
+              <div class="new-season__img-box">
+                <picture>
+                  <source srcset="./images/img2-1.webp" type="image/webp" />
+                  <img
+                    class="new-season__img"
+                    src="./images/img2-1.jpg"
+                    alt="clock 1"
+                  />
+                </picture>
+              </div>
+              <p class="new-season__name">Louis XVI ATHOS</p>
+              <p class="new-season__price">13 600 грн.</p>
+            </li>
+            <li class="new-season__item">
+              <div class="new-season__img-box">
+                <picture>
+                  <source srcset="./images/img2-2.webp" type="image/webp" />
+                  <img
+                    class="new-season__img"
+                    src="./images/img2-2.jpg"
+                    alt="clock 2"
+                  />
+                </picture>
+              </div>
+              <p class="new-season__name">Carl von Zeyten</p>
+              <p class="new-season__price">16 500 грн.</p>
+            </li>
+            <li class="new-season__item">
+              <div class="new-season__img-box">
+                <picture>
+                  <source srcset="./images/img2-3.webp" type="image/webp" />
+                  <img
+                    class="new-season__img"
+                    src="./images/img2-3.jpg"
+                    alt="clock 3"
+                  />
+                </picture>
+              </div>
+              <p class="new-season__name">JORD AR5905</p>
+              <p class="new-season__price">65 000 грн.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="new-collection">
+          <picture>
+            <source srcset="./images/img3.webp" type="image/webp" />
+            <img
+              class="new-collection__img"
+              src="./images/img3.jpg"
+              alt="new-collection"
+            />
+          </picture>
+          <div class="new-collection__wrapper">
+            <h2 class="new-collection__wrapper__title title">Нова колекція</h2>
+            <button class="new-collection__wrapper__btn btn" type="button">
+              Каталог
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="collection-2018">
+        <picture>
+          <source srcset="/images/img4.webp" type="image/webp" />
+          <img
+            src="/images/img4.jpg"
+            alt="collection-2018"
+            class="collection-2018__img"
+          />
+        </picture>
+        <div class="collection-2018__wrapper">
+          <h2 class="collection-2018__title title">колекція 2018</h2>
+          <p class="collection-2018__text text">
+            Годинники як інструмент визначення часу давно і надійно прижилися в
+            людській реальності. Романтики та прагматики, художники та
+            бізнесмени, чоловіки та жінки, дорослі та діти - всі хочуть знати
+            котра година в потрібний момент. Скільки хвилин пройшло, скільки
+            залишилося, а ще - які саме моделі і якого бренду виблискують на
+            руці у друга, коханої або конкурента. З давніх часів, коли людина
+            здогадався втикнути в землю паличку та іншою поличкою взявся
+            відміряти рівні проміжки часу на піску, не вщухають суперечки - яким
+            повинний бути годинник? Наручним, або настільним, або настінним,
+            або, нарешті, підлоговим? Чому ж кожен діамантик на безеле або
+            шестерінка в механізмі незмінно змушують гордовито випнутися нижню
+            губу володаря аксесуара, а щоки - роздутися?
+          </p>
+          <button class="collection-2018__btn btn" type="button">
+            переглянути колекцію
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

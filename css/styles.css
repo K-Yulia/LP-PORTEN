@@ -207,6 +207,7 @@ body {
 .main-header__container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .logo {
   font-family: "Post No Bills Jaffna", sans-serif;
@@ -301,7 +302,7 @@ body {
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
@@ -330,14 +331,14 @@ body {
 .mobile-menu__container {
   display: flex;
   flex-direction: column;
-  position: relative;
-  padding-left: 40px;
+  /* position: relative; */
+  /* padding-left: 40px; */
   height: 100%;
 }
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 95px;
+  /* top: 95px; */
   right: 25px;
   background-color: transparent;
   border: 0;
@@ -350,10 +351,12 @@ body {
   height: 30px;
   fill: var(--primary-color);
 }
-
+.mobile-menu__logo {
+  margin-bottom: 30px;
+}
 .mobile-menu-nav {
   display: flex;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   margin: 0;
   list-style: none;
   margin-bottom: auto;

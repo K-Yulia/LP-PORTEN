@@ -9,7 +9,10 @@
   refs.closeMenuBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.menu.classList.toggle('is-open');
+   nav = refs.menu.classList.toggle('is-open');
+    if (nav) {
+      document.body.style.overflow = 'hidden';
+    } else { document.body.style.overflow = 'scroll' }
   }
 })();
 
@@ -22,4 +25,4 @@ refs.navList.addEventListener('click', onListClick);
 
 function onListClick(ev) {
   refs.burgerMenu.classList.remove('is-open');
-}
+  }

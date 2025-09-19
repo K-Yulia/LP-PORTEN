@@ -1048,7 +1048,7 @@ body {
   }
   .footer-top__container {
     margin-top: 80px;
-    padding-bottom: 50px;
+    /* padding-bottom: 30px; */
   }
   .footer-top__categories {
     margin-right: 30px;
